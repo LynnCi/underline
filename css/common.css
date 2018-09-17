@@ -1,0 +1,516 @@
+@charset "utf-8";
+
+/*iphone手机的input的样式问题*/
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-appearance: none;
+}
+
+input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/*css初始值*/
+
+body {
+    height: 100%;
+    min-width:1200px;
+    /* overflow-y:scroll; */
+    background: #f8f8f8;
+    margin: 0px;
+    font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 180%;
+    color: #333333;
+    min-width: 1280px;
+}
+
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+html,
+body,
+div,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    border: 0;
+}
+
+input,
+select {
+    border: 0;
+}
+
+a:link {
+    font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+}
+
+a:visited {
+    font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    text-decoration: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: 14px
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+cite,
+em,
+s,
+i,
+b {
+    font-style: normal
+}
+
+input,
+button,
+textarea,
+select {
+    font-size: 14px;
+    font-family: 'microsoft yahei', Verdana, Arial, Helvetica, sans-serif;
+}
+
+a,
+input,
+textarea {
+    text-decoration: none;
+    outline: 0
+}
+
+li,
+img,
+label,
+input {
+    vertical-align: middle;
+}
+/*登陆*/
+
+.login {
+    width: 620px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.login_logo {
+    display: block;
+    margin: 0 auto 50px;
+}
+
+.login_form {
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.login_form h2 {
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #dadada;
+}
+
+.login_form ul {
+    margin: 30px 105px;
+}
+
+.item_login {
+    margin-bottom: 25px;
+}
+
+.item_login p {
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.item_login input {
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    border: solid 1px #e2e2e7;
+    border-radius: 5px;
+}
+
+.login_btn {
+    display: block;
+    width: 206px;
+    height: 53px;
+    line-height: 53px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #da0e00;
+    box-shadow: 0px 4px 4px 0px rgba(218, 14, 0, 0.35);
+    border-radius: 5px;
+    outline: none;
+}
+
+.shade{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/login_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 999999;
+}
+
+
+.topLine {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: #da0e00;
+}
+
+.header {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: 0;
+    height: 58px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 3px 0px rgba(153, 156, 171, 0.2);
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    display: block;
+    width: auto;
+    height: 30px;
+    margin: 14px 20px;
+}
+
+.heaer_info {
+    float: right;
+    height: 58px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.h_search,
+.h_type,
+.h_sms,
+.h_server,
+.h_user,
+.h_close {
+    float: left;
+    height: 35px;
+    margin: 11.5px 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.h_search .h_searchinput {
+    display: block;
+    width: 280px;
+    height: 35px;
+    padding: 0 50px 0 15px;
+    border: solid 1px #d5d6de;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.h_search .h_searchicon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 35px;
+    background: url(../img/search.png) no-repeat center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+.h_type {
+    height: 35px;
+    margin: 11.5px 10px;
+    background: #fff;
+    border: solid 1px #d5d6de;
+}
+
+.h_sms {
+    width: 35px;
+    height: 35px;
+    background: url(../img/message.png) no-repeat center;
+    background-size: 16px;
+}
+
+.h_server {
+    width: 35px;
+    height: 35px;
+    background: url(../img/help.png) no-repeat center;
+    background-size: 16px;
+}
+
+.h_close {
+    width: 35px;
+    height: 35px;
+    background: url(../img/close.png) no-repeat center;
+    background-size: 16px;
+}
+
+.h_user {
+    height: 35px;
+    overflow: hidden;
+}
+
+.h_user .h_userimg {
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.h_user .h_username {
+    float: left;
+    line-height: 35px;
+    padding: 0 20px 0 10px;
+    background: url(../img/sign.png) no-repeat right center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+
+/* 左侧导航栏 */
+
+
+.left_nav {
+    position: fixed;
+    top: 63px;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    background: #1b1b1b;
+    z-index: 998;
+}
+
+.right_wrapper {
+    min-width: 980px;
+    margin: 0 20px 40px 20px;
+    position: absolute;
+    top: 63px;
+    left: 180px;
+    right: 0;
+    bottom: 0;
+
+}
+
+.nav_one {
+    width: 180px;
+    /* text-align: left; */
+}
+
+.nav_one li {
+    height: 60px;
+    line-height: 60px;
+    color: #999cab;
+    padding: 0 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_one li a {
+    display: block;
+    color: #999cab;
+}
+
+.nav_one li.active {
+    background: #da0e00;
+}
+
+.nav_one li.active a {
+    color: #fff;
+}
+
+.nav_one li b {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 15px 5px;
+}
+
+.nav_one li.nav_manage b {
+    background: url(../img/leftbar1.png) no-repeat center;
+    background-size: 20px;
+}
+
+.nav_one li.nav_release b {
+    background: url(../img/leftbar2.png) no-repeat center;
+    background-size: 20px;
+}
+
+.nav_one li.nav_pwd b {
+    background: url(../img/leftbar3.png) no-repeat center;
+    background-size: 20px;
+}
+
+.nav_one li.nav_manage b.active {
+    background: url(../img/leftbar1s.png) no-repeat center;
+    background-size: 20px;
+}
+
+.nav_one li.nav_release b.active {
+    background: url(../img/leftbar2s.png) no-repeat center;
+    background-size: 20px;
+}
+
+.nav_one li.nav_pwd b.active {
+    background: url(../img/leftbar3s.png) no-repeat center;
+    background-size: 20px;
+}
+
+.nav_two {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 100%;
+    background: #323232;
+}
+
+.nav_two li {
+    padding: 0 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    cursor: pointer;
+}
+.nav_two li a{
+    color: #999cab;
+}
+.nav_two li.on a{
+    color: #fff;
+}
+
+.wrapper {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 0 40px 0;/* border: 1px solid #333; */
+    box-sizing: border-box;
+    overflow-y: scroll;
+    background:#fff;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 20px 0 200px;
+    padding-right: 17px;
+    background-color: #f8f8f8;
+}
+
+.footer span {
+    font-size: 12px;
+    color: #999cab;
+}
+
+.footer span.name {
+    float: left;
+}
+
+.footer span.beian {
+    float: right;
+}
+
+.top {
+    position: fixed;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 25px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;
+    z-index: 1000;
+    width: 83%;
+    box-sizing: border-box;
+}
